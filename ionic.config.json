@@ -1,0 +1,7 @@
+{
+  "name": "appHome",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

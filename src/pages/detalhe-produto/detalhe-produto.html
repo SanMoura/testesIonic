@@ -1,0 +1,46 @@
+
+<ion-header>
+
+  <ion-toolbar (click)="fecharDetalhe()" class="toolbar toolbar-md statusbar-padding">
+    <div class="toolbar-background toolbar-background-md"></div>
+    <ion-buttons start="" class="bar-buttons bar-buttons-md">
+      <button ion-button="" class="disable-hover bar-button bar-button-md bar-button-default bar-button-default-md"><span
+          class="button-inner">
+          <span color="primary" ion-text="" showwhen="ios" class="text text-md text-md-primary hidden-show-when">Cancel</span>
+          <ion-icon name="md-close" role="img" showwhen="android, windows" class="icon icon-md ion-md-close" aria-label="close"></ion-icon>
+        </span>
+        <div class="button-effect"></div>
+      </button>
+    </ion-buttons>
+    <div class="toolbar-content toolbar-content-md">
+      <ion-title class="title title-md">
+        <div class="toolbar-title toolbar-title-md">
+          {{produto}}
+        </div>
+      </ion-title>
+
+    </div>
+  </ion-toolbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list>
+    <ion-item>
+      <ion-label floating>Quantidade</ion-label>
+      <ion-input type="text" #qtdProduto></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-label floating>Preço</ion-label>
+        <ion-input type="text" #precoProduto></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label floating>Total</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+  </ion-list>
+  <button (click)="fecharDetalhe(qtdProduto.value,precoProduto.value)" ion-button full icon-start>
+      <ion-icon name="ios-checkmark-circle"></ion-icon>
+    Salvar</button>
+</ion-content>

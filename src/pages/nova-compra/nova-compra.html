@@ -1,0 +1,32 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Lista de produtos</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+
+    <ion-content>
+
+        <ion-item-group>
+
+          <ion-item-divider class="titleDivider" color="light">Alimentos</ion-item-divider>
+
+          <ion-item (click)="opcoesProduto(produto._elementRef.nativeElement.id)" #produto id="Macarrão" >Macarrão</ion-item>
+          
+          <ion-item (click)="opcoesProduto(produto._elementRef.nativeElement.id)" #produto2 id="Feijão">Feijão</ion-item>
+
+          <ion-item-divider class="titleDivider" color="light">Limpeza</ion-item-divider>
+
+          <ion-item (click)="opcoesProduto()">Sabão</ion-item>
+
+          <ion-item (click)="opcoesProduto()">Agua sanitária</ion-item>
+
+        </ion-item-group>
+        
+      </ion-content>
+
+</ion-content>
